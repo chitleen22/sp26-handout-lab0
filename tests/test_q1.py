@@ -8,13 +8,13 @@ sys.path.append(".")
 
 class TestIsPalindrome(unittest.TestCase):
 
-    def test_palindrome_true(self):
+    def test_palindrome_true(self) -> None:
         self.assertTrue(is_palindrome("racecar"))
 
-    def test_palindrome_false(self):
+    def test_palindrome_false(self) -> None:
         self.assertFalse(is_palindrome("Is not a palindrome"))
 
-    def test_empty(self):
+    def test_empty(self) -> None:
         self.assertTrue(is_palindrome(""))
 
 
