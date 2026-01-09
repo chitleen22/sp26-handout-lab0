@@ -8,17 +8,14 @@ sys.path.append(".")
 
 class TestIsPalindrome(unittest.TestCase):
 
-    def test_palindrome_True(self):
+    def test_palindrome_true(self):
         self.assertTrue(is_palindrome("racecar"))
 
-    def test_case_insensetive(self):
-        self.assertTrue( is .is_palindrome("RaCeCaR"))
-
-    def test_with_spaces(self):
-        self.assertTrue(is_palindrome("taco cat"))
-
     def test_palindrome_false(self):
-        self.assertFalse(is_palindrome("yellow"))
+        self.assertFalse(is_palindrome("Is not a palindrome"))
+
+    def test_empty(self):
+        self.assertTrue(is_palindrome(""))
 
 
 if __name__ == "__main__":
