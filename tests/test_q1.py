@@ -12,7 +12,7 @@ class TestIsPalindrome(unittest.TestCase):
         self.assertTrue(is_palindrome("racecar"))
 
     def test_palindrome_false(self) -> None:
-        self.assertFalse(is_palindrome("Is not a palindrome"))
+        self.assertFalse(is_palindrome("This is not a palindrome"))
 
     def test_empty(self) -> None:
         self.assertTrue(is_palindrome(""))
