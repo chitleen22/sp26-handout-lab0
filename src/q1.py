@@ -21,7 +21,4 @@ def is_palindrome(s: str) -> bool:
         if char.isalnum():
             cleaned += char.lower()
 
-    if cleaned == cleaned[::-1]:
-        return True
-    else:
-        return false
+    return cleaned == cleaned[::-1]
